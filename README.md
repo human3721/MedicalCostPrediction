@@ -4,9 +4,9 @@ Medical Cost Prediction Tool documentation
 
 Fall 2019
 
-Ishan Babbar (team lead) [ibabbar2@illinois.edu](mailto:ibabbar2@illinois.edu)
+Ishan Babbar (team lead) ibabbar2 [ibabbar2@illinois.edu](mailto:ibabbar2@illinois.edu)
 
-Houmin Zhong [houminz2@illinois.edu](mailto:houminz2@illinois.edu)
+Houmin Zhong houminz2 [houminz2@illinois.edu](mailto:houminz2@illinois.edu)
 
 **Please open**  **MCPT documentation.docx**  **for detail documentation**
 
