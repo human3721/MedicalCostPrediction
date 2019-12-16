@@ -80,6 +80,12 @@ class Invocation(object):
     
     def on_post(self, req, resp):
         try:
+            headers = {k: v for k, v in req.headers.items()}
+            print(headers)
+            if 'MODEL' in headers and headers['MODEL'] in ['char_cnn', 'bilstm', 'lstm']:
+                Cache.model = Model(headers['MODEL'])   
+                if headers['MODEL'] == 'lstm' or  headers['MODEL'] == 'bilstm':
+                    Cache.desc_length = 20
             data = req.stream.read().decode("utf-8")
             data_df = pd.read_csv(StringIO(data), names=["description"])
             X = self.prepare_input(
